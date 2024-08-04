@@ -23,7 +23,7 @@ export default function Paragraph({value}){
                     const end = start + (1/words.length)
                     console.log([start,end]);
                     return(
-                        <WORD range={[start,end]} progress={scrollYProgress}>
+                        <WORD key={i} range={[start,end]} progress={scrollYProgress}>
                             {word}
                         </WORD>
                     )
