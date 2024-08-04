@@ -2,32 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+
+
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #1A1A1A;
+  overscroll-behavior: none;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* styles/globals.css */
+.fade-effect::before,
+.fade-effect::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10%; /* Adjust the width of the fade effect */
+  z-index: 10;
+}
+
+.fade-effect::before {
+  left: 0;
+  background: linear-gradient(to right, #1A1A1A, transparent);
+}
+
+.fade-effect::after {
+  right: 0;
+  background: linear-gradient(to left, #1A1A1A, transparent);
 }
