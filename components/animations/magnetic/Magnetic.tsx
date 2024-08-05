@@ -13,7 +13,6 @@ export default function Magnetic({ children }:any) {
         let x = clientX - (left + width / 2)
         let y = clientY - (top + height / 2)
 
-        // Clamp the x and y values
         x = Math.max(-maxDisplacement, Math.min(x, maxDisplacement))
         y = Math.max(-maxDisplacement, Math.min(y, maxDisplacement))
 
