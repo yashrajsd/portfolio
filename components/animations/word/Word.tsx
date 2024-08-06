@@ -1,7 +1,13 @@
 'use client';
 import {motion, useScroll, useTransform} from 'framer-motion'
-import { useEffect ,useRef} from 'react';
-export default function Paragraph({value}){
+import { useEffect ,useRef} from 'react';\
+
+
+interface ParagraphProps {
+    value: string;
+}
+
+export default function Paragraph({value}: ParagraphProps){
 
     const element = useRef(null);
     const {scrollYProgress} = useScroll({
