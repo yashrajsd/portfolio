@@ -48,7 +48,7 @@ export default function Reviews(){
                     return(
                        
                             <span key={index} className="py-[10vh] overflow-hidden text-[#C6C6C6] px-[2vw] border-[#303030] cursor-pointer border-[1px] text-white flex">
-                            <AnimatedButton text={review.work} bg={null}>
+                            <AnimatedButton text={review.work} bg={false}>
                             <span className="flex flex-col">
                                 <span>
                                     {review.userid}
@@ -73,7 +73,7 @@ export default function Reviews(){
                 reviews.map((review,index)=>{
                     return(
                         <span key={index} className="py-[10vh] overflow-hidden text-[#C6C6C6] cursor-pointer px-[2vw] border-[#303030] border-[1px] text-white flex">
-                            <AnimatedButton text={review.work} bg={null}>
+                            <AnimatedButton text={review.work} bg={false}>
                             <span className="flex flex-col">
                                 <span>
                                     {review.userid}

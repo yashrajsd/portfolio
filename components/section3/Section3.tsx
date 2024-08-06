@@ -47,6 +47,7 @@ export default function Section3() {
                     </button>
                 </Magnetic>
                 <motion.span
+                    
                     className="absolute bottom-0 z-[-1]"
                 >
                 <Image
