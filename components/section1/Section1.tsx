@@ -63,7 +63,7 @@ export default function Section1() {
                         <Magnetic>
                             <button className="w-[12vw] overflow-hidden h-[5vw] flex justify-center items-center text-[#56B44D] border-[#363127] border-[1px] rounded-full">
                                 <Magnetic>
-                                    <AnimatedButton bg={null} text={'Contact Me'}>
+                                    <AnimatedButton bg={false} text={'Contact Me'}>
                                         <span>Let&apos;s Connect</span>
                                     </AnimatedButton>
                                 </Magnetic>

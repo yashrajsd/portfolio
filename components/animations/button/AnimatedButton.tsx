@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { useState } from 'react'
 
 export default function AnimatedButton({ children,text ,bg}:{
-    children:any,text:string,bg:string
+    children:any,text:string,bg:boolean
 }) {
     const [isHovered, setIsHovered] = useState(false)
 
