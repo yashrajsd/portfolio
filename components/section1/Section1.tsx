@@ -28,7 +28,7 @@ export default function Section1() {
                         &#47;&#47; UI/UX<br />designer
                     </span>
                     <motion.span
-                        initial={{ opacity: 0.3 }}
+                        initial={{ opacity: 0.2 }}
                         animate={{ opacity: 1 }}
                         transition={{
                             duration: 0.25,
@@ -39,7 +39,7 @@ export default function Section1() {
                     </motion.span>
                 </div>
                 <motion.div
-                    initial={{ opacity: 0.3 }}
+                    initial={{ opacity: 0.2 }}
                     animate={{ opacity: 1 }}
                     transition={{
                         duration: 0.25,
@@ -50,7 +50,7 @@ export default function Section1() {
                 </motion.div>
                 <div className="text-[#FBFFCF] flex justify-center items-center gap-[2vh]">
                     <motion.span
-                        initial={{ opacity: 0.3 }}
+                        initial={{ opacity: 0.2 }}
                         animate={{ opacity: 1 }}
                         transition={{
                             duration: 0.25,
@@ -73,7 +73,7 @@ export default function Section1() {
                 </div>
                 <div className="text-[#56FFA4] flex justify-center items-center gap-[2vh]">
                     <motion.span
-                        initial={{ opacity: 0.3 }}
+                        initial={{ opacity: 0.2 }}
                         animate={{ opacity: 1 }}
                         transition={{
                             duration: 0.25,
@@ -83,7 +83,7 @@ export default function Section1() {
                         &
                     </motion.span>
                     <motion.span
-                        initial={{ opacity: 0.3 }}
+                        initial={{ opacity: 0.2 }}
                         animate={{ opacity: 1 }}
                         transition={{
                             duration: 0.25,

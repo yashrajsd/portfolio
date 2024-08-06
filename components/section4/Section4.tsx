@@ -36,7 +36,7 @@ const Icons=[
 
 export default function Section4(){
     return(
-        <div className="w-full p-[2rem] min-h-[100vh] flex flex-col justify-center items-center mt-[2rem]">
+        <div className="w-full b-b-[1px] b-b-[#303030] p-[2rem] min-h-[100vh] flex flex-col justify-center items-center mt-[2rem]">
             <h1 className={`${Hanken600.className} mb-[2rem] text-[#6D55FF] text-center text-[2rem]`}>
                 My Skills
             </h1>

@@ -4,6 +4,7 @@ const Hanken600 = Hanken_Grotesk({
     subsets: ['latin'],
     display: 'swap'
 });
+import {motion} from 'framer-motion'
 import golden from '../../public/golden.png';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -45,11 +46,15 @@ export default function Section3() {
                         <span className={`text-[#D9D79E] text-[1.5rem] ${Hanken600.className}`}> Get in touch</span>
                     </button>
                 </Magnetic>
+                <motion.span
+                    className="absolute bottom-0 z-[-1]"
+                >
                 <Image
                     src={golden}
                     alt="shadow"
-                    className="absolute bottom-0 z-[-1] w-full h-auto"
+                    className="w-full h-auto"
                 />
+                </motion.span>
             </div>
         </div>
     );

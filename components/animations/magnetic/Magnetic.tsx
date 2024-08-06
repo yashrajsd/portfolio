@@ -1,13 +1,18 @@
 'use client'
 import { motion } from 'framer-motion'
-import { ReactNode, useRef, useState } from 'react'
+import { ReactNode, useRef, useState, MouseEvent } from 'react'
 
-export default function Magnetic({ children }:any) {
-    const ref = useRef(null)
+interface MagneticProps {
+    children: ReactNode;
+}
+
+export default function Magnetic({ children }: MagneticProps) {
+    const ref = useRef<HTMLDivElement>(null)
     const [position, setPosition] = useState({ x: 0, y: 0 })
     const maxDisplacement = 20
 
-    const mouseMove = (e:any) => {
+    const mouseMove = (e: MouseEvent<HTMLDivElement>) => {
+        if (!ref.current) return
         const { clientX, clientY } = e
         const { width, height, left, top } = ref.current.getBoundingClientRect()
         let x = clientX - (left + width / 2)
@@ -31,7 +36,7 @@ export default function Magnetic({ children }:any) {
             onMouseLeave={mouseLeave}
             ref={ref}
             animate={{ x, y }}
-            transition={{type:'spring',stiffness:80,damping:10,mass:0.9}}
+            transition={{ type: 'spring', stiffness: 80, damping: 10, mass: 0.9 }}
         >
             {children}
         </motion.div>
