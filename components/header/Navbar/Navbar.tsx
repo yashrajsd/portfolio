@@ -18,7 +18,7 @@ export default function Navbar () {
           </div>
         </div>
         <div className="w-[7%] h-[7.5vh] cursor-pointer rounded-[13px] border-[#303030] flex justify-center items-center border-[1px]">
-            <AnimatedButton bg={'#5350FF'} text={'Hire'}>
+            <AnimatedButton bg={true} text={'Hire'}>
             <p className="text-white">Hire</p>
             </AnimatedButton>
         </div>
