@@ -41,7 +41,7 @@ export default function Preloader(){
             <div className='absolute right-0 h-full border-l-[#5B5B5B] w-[10vh] border-[1px]'/>
             <div className='absolute bottom-0 h-[10vh]  border-r-[#5B5B5B] w-full border-[1px]'/>
             <div className='absolute left-0 h-full  border-t-[#5B5B5B] w-[10vh] border-[1px]'/>
-            <div>
+            <div className='border-t-[#5B5B5B] w-[80vh] flex justify-center items-center h-[80vh] rounded-full border-[1px]'>
             <p className={`${Hanken600.className} text-[2vw] text-[#252525] z-[1000]`}>{words[index]}</p>
             </div>
             </div>
