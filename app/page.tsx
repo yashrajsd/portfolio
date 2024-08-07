@@ -30,7 +30,7 @@ export default function Home() {
       <Section1/>
       <Reviews/>
       <Section3/>
-      <Section4/>
+      {/* <Section4/> */}
     </main>
   );
 }

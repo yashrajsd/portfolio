@@ -17,10 +17,41 @@ const Hanken600 = Hanken_Grotesk({
     display: 'swap'
 });
 
+const circles =[1,2,3,4,5,6,7,8]
+
 export default function Section1() {
     return (
-        <div className="w-full gap-[1rem] rounded-[2rem] border-[#303030] flex flex-col border-[1px] relative overflow-hidden h-[90vh] justify-center items-center">
+        <div className="w-full gap-[1rem] rounded-[2rem] border-[#303030] flex flex-col border-[1px] relative overflow-hidden h-[90vh]  justify-center items-center">
+            {circles.map((num, index) => {
+                const size = `${100+10 * index}vh`;
+                const opacity = `0.${num}`;
+  
+                return (
+                <motion.div 
+                key={index}
+                initial={{ borderColor: '#303030' }}
+                animate={{ borderColor: '#1A1A1A' }}
+                transition={{
+                    duration: 5,
+                    delay: num / 8,
+                    repeat: Infinity
+                }}
+                style={{
+                    width: size,
+                    height: size,
+                    opacity: opacity,
+                    borderColor: '#303030',
+                    zIndex: -99
+                }}
+                className="rounded-full absolute border-[1px]"
+                />
+            );
+            })}
+
             <FloatingCursor />
+            <div className='rounded-full border-1px border-[#303030]'>
+
+            </div>
             <h1 className={`${Hanken700.className} text-center leading-tight cursor-pointer`}>
                 <div className="flex justify-center gap-[0.5rem] items-center">
                     <span className="text-[#5D5D5D] text-[2.9vh] w-fit text-right">
