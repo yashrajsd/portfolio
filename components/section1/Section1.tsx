@@ -50,7 +50,9 @@ export default function Section1() {
 
             <FloatingCursor />
             <div className='rounded-full border-1px border-[#303030]'>
-
+                <img
+                    src=''
+                />
             </div>
             <h1 className={`${Hanken700.className} text-center leading-tight cursor-pointer`}>
                 <div className="flex justify-center gap-[0.5rem] items-center">
@@ -63,7 +65,7 @@ export default function Section1() {
                         animate={{ opacity: 1 }}
                         transition={{
                             duration: 0.25,
-                            delay: 2.5 / 10
+                            delay: (2.5 / 10)+2.5
                         }}
                         className="text-[#A089FF] text-[10.5vh]">
                         DIGITAL
@@ -74,7 +76,7 @@ export default function Section1() {
                     animate={{ opacity: 1 }}
                     transition={{
                         duration: 0.25,
-                        delay: 5 / 10
+                        delay: (5 / 10)+2.5
                     }}
                     className="text-[#F5FF80] text-[10.5vh]">
                     EXPERIENCE
@@ -85,7 +87,7 @@ export default function Section1() {
                         animate={{ opacity: 1 }}
                         transition={{
                             duration: 0.25,
-                            delay: 7.5 / 10
+                            delay: (7.5 / 10)+2.5
                         }}
                         className="text-[10.5vh]">
                         DESIGNER
@@ -108,7 +110,7 @@ export default function Section1() {
                         animate={{ opacity: 1 }}
                         transition={{
                             duration: 0.25,
-                            delay: 1
+                            delay: 1+2.5
                         }}
                         className="text-[10.5vh]">
                         &
@@ -118,7 +120,7 @@ export default function Section1() {
                         animate={{ opacity: 1 }}
                         transition={{
                             duration: 0.25,
-                            delay: 1
+                            delay: 1+2.5
                         }}
                         className="text-[10.5vh]">
                         DEVELOPER

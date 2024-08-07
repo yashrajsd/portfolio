@@ -36,7 +36,7 @@ const FloatingCursor = () => {
         top: 0,
         left: 0,
         pointerEvents: "none",
-        zIndex: 9999,
+        zIndex: 99,
       }}
     >
       <Image

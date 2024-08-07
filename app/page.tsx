@@ -5,9 +5,21 @@ import Section3 from "@/components/section3/Section3";
 import Section4 from "@/components/section4/Section4";
 import Image from "next/image";
 import Lenis from '@studio-freight/lenis';
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import Preloader from "@/components/Preloader/Preloader";
+import { AnimatePresence } from "framer-motion";
 
 export default function Home() {
+
+  const [loading,setLoading] = useState(true)
+
+
+  useEffect(()=>{
+    setTimeout(()=>{
+      setLoading(false);
+    },2000)
+  },[])
+
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.2,
@@ -25,8 +37,14 @@ export default function Home() {
       lenis.destroy();
     };
   }, []);
+
   return (
-    <main className="">
+    <main className={`min-h-[100vh] ${loading && ('overflow-hidden')}`}>
+      <AnimatePresence>
+      {
+        loading && <Preloader/>
+      }
+      </AnimatePresence>
       <Section1/>
       <Reviews/>
       <Section3/>
