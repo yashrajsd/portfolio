@@ -4,9 +4,10 @@ import { Hanken_Grotesk } from "next/font/google";
 import Magnetic from "../animations/magnetic/Magnetic";
 import AnimatedButton from "../animations/button/AnimatedButton";
 import FloatingCursor from '../animations/cursor/FloatingCursor';
-
+import Avatar from '../../public/avatar.jpeg'
+import Image from 'next/image';
 const Hanken700 = Hanken_Grotesk({
-    weight: '800',
+    weight: '700',
     subsets: ['latin'],
     display: 'swap'
 });
@@ -49,10 +50,15 @@ export default function Section1() {
             })}
 
             <FloatingCursor />
-            <div className='rounded-full border-1px border-[#303030]'>
-                <img
-                    src=''
-                />
+            <div className='rounded-full flex justiy-center items-center border-[1px] p-[1rem] border-[#303030] gap-[1rem]'>
+            <h1 className={`text-[0.8rem] text-[#FFFEE0] ${Hanken600.className}`}><span className='text-[1rem]'>👋</span> Hi! myself Yashraj Deshmukh</h1>
+                {/* <Image
+                    src={Avatar}
+                    width={60}
+                    height={60}
+                    className='rounded-full'
+                    alt='Memoji of yashraj deshmukh'
+                /> */}
             </div>
             <h1 className={`${Hanken700.className} text-center leading-tight cursor-pointer`}>
                 <div className="flex justify-center gap-[0.5rem] items-center">

@@ -24,16 +24,16 @@ body {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 10%; /* Adjust the width of the fade effect */
+  width: 10%; 
   z-index: 10;
 }
 
 .fade-effect::before {
   left: 0;
-  background: linear-gradient(to right, #1A1A1A, transparent);
+  background: linear-gradient(to right, #4A5CFF, transparent);
 }
 
 .fade-effect::after {
   right: 0;
-  background: linear-gradient(to left, #1A1A1A, transparent);
+  background: linear-gradient(to left, #4A5CFF, transparent);
 }
